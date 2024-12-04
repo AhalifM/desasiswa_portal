@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { useState } from "react";
+import { Button } from "../ui/button";
 
 const AdminSideMenu = () => {
   const [selected, setSelected] = useState("Dashboard");
@@ -25,7 +26,7 @@ const AdminSideMenu = () => {
   return (
     <div className="w-[320px] h-screen bg-white text-black overflow-y-auto">
       <div className="flex justify-center items-center w-full h-[81px] border-b">
-        <h1 className="text-2xl text-black font-bold">Admin Portal</h1>
+        <h1 className="text-2xl text-black font-bold">Desasiswa Portal</h1>
       </div>
       <div className="flex justify-center items-center p-6 flex-col border-b">
         {/* TODO Add Image */}
@@ -71,6 +72,11 @@ const AdminSideMenu = () => {
             </Link>
           </div>
         ))}
+      </div>
+      <div className="items-center justify-center flex w-full">
+        <Button asChild variant="outline">
+          <Link href="/student/dashboard">Switch to Student</Link>
+        </Button>
       </div>
     </div>
   );
