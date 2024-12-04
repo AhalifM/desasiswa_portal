@@ -19,7 +19,7 @@ export default function StudentLayout({
         <StudentSideMenu />
         <div className="flex flex-col w-full">
           <StudentTopMenu />
-          <div className="bg-slate-100 p-6 h-full justify-center flex items-center">
+          <div className="bg-slate-100 h-full justify-center flex items-center">
             {children}
           </div>
         </div>

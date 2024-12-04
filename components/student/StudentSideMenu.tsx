@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { useState } from "react";
+import { Button } from "../ui/button";
 
 const StudentSideMenu = () => {
   const [selected, setSelected] = useState("Dashboard");
@@ -24,9 +25,9 @@ const StudentSideMenu = () => {
     // { name: "Forms Management", href: "/forms-management", icon: "forms.svg" },
   ];
   return (
-    <div className="w-[320px] h-screen bg-white text-black overflow-y-auto">
+    <div className="w-[320px] h-screen bg-white text-black overflow-y-auto flex flex-col">
       <div className="flex justify-center items-center w-full h-[81px] border-b">
-        <h1 className="text-2xl text-black font-bold">Student Portal</h1>
+        <h1 className="text-2xl text-black font-bold">Desasiswa Portal</h1>
       </div>
       <div className="flex justify-center items-center p-6 flex-col border-b">
         {/* TODO Add Image */}
@@ -67,6 +68,11 @@ const StudentSideMenu = () => {
             </Link>
           </div>
         ))}
+      </div>
+      <div className="items-center justify-center flex w-full">
+        <Button asChild variant="outline">
+          <Link href="/admin">Switch to Admin</Link>
+        </Button>
       </div>
     </div>
   );
