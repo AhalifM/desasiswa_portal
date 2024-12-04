@@ -1,5 +1,4 @@
 import React from "react";
-import Search from "../Search";
 import Image from "next/image";
 import { SignedIn, UserButton } from "@clerk/nextjs";
 

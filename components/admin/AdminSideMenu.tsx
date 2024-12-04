@@ -4,7 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { useState } from "react";
-import { Button } from "../ui/button";
 
 const AdminSideMenu = () => {
   const [selected, setSelected] = useState("Dashboard");

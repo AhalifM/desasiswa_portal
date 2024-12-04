@@ -6,7 +6,6 @@ import { CheckoutStepsLayout } from "@/components/checkout/CheckoutStepsLayout";
 import Image from "next/image";
 import { useState, useRef } from "react";
 import React from "react";
-import { StepsLayout } from "@/components/StepsLayout";
 
 const CheckoutStepOne = () => {
   const [files, setFiles] = useState<File[]>([]);
