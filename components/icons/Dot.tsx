@@ -5,10 +5,8 @@ type DotProps = {
 export const Dot = ({ active }: DotProps) => {
   return (
     <div
-      className={`w-[40px] h-[40px] rounded-full ${
-        active
-          ? "bg-gradient-to-r from-sky-400 via-30% to-emerald-400 to-90%"
-          : "bg-sky-300 opacity-25 hover:opacity-40"
+      className={`w-[30px] h-[30px] rounded-full ${
+        active ? "bg-black" : "border-gray-400 hover:bg-slate-500 bg-gray-300"
       }`}
     ></div>
   );

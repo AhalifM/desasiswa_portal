@@ -13,7 +13,7 @@ export const NavigationButtons = ({
   home,
 }: NavigationButtonsProps) => {
   return (
-    <div className="w-full flex gap-x-6">
+    <div className="w-full flex gap-x-6 mt-6">
       <Button asChild variant="outline" className="w-full">
         <Link className="w-full" href={back}>
           <p>Back</p>

@@ -18,7 +18,7 @@ const StudentSideMenu = () => {
     },
     {
       name: "Check Out",
-      href: "/student/check-out",
+      href: "/student/check-out/stepone",
       icon: "/room.svg",
     },
 
@@ -68,11 +68,6 @@ const StudentSideMenu = () => {
             </Link>
           </div>
         ))}
-      </div>
-      <div className="items-center justify-center flex w-full">
-        <Button asChild variant="outline">
-          <Link href="/admin">Switch to Admin</Link>
-        </Button>
       </div>
     </div>
   );

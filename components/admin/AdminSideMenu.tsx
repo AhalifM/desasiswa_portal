@@ -73,11 +73,6 @@ const AdminSideMenu = () => {
           </div>
         ))}
       </div>
-      <div className="items-center justify-center flex w-full">
-        <Button asChild variant="outline">
-          <Link href="/student/dashboard">Switch to Student</Link>
-        </Button>
-      </div>
     </div>
   );
 };
