@@ -13,7 +13,7 @@ const StudentSideMenu = () => {
     { name: "Dashboard", href: "/student/dashboard", icon: "/dashboard.svg" },
     {
       name: "Check In",
-      href: "/student/check-in",
+      href: "/student/check-in/stepone",
       icon: "/room.svg",
     },
     {
