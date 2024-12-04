@@ -1,17 +1,35 @@
 // "use client";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="w-screen h-screen justify-center flex items-center flex-col gap-6">
-      <h1>Welcome to Desasiswa Management</h1>
-      <Button asChild>
-        <Link href="/sign-in">SignIn</Link>
-      </Button>
-      <Button asChild>
-        <Link href="/sign-up">SignUp</Link>
-      </Button>
+    <div className="w-screen h-screen justify-around flex flex-row items-center gap-6">
+      <div className="flex flex-col gap-6">
+        <h1 className="text-5xl">Desasiswa Portal</h1>
+        <p className="text-gray-500">
+          Your one-stop solution for seamless student housing management.
+          <br /> Stay connected, stay organized!
+        </p>
+        <div className="flex w-full justify-between space-x-6">
+          <Button asChild className="w-full" variant="outline">
+            <Link href="/sign-in">SignIn</Link>
+          </Button>
+          <Button asChild className="w-full">
+            <Link href="/sign-up">SignUp</Link>
+          </Button>
+        </div>
+      </div>
+      <div>
+        <Image
+          src="/management.jpg"
+          width={500}
+          height={500}
+          alt="landing"
+          className="object-fill"
+        />
+      </div>
     </div>
   );
 }

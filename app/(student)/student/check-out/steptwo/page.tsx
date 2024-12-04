@@ -14,7 +14,7 @@ const CheckoutStepTwo = () => {
         <div className="flex w-full flex-col gap-4">
           <Card>
             <CardHeader>
-              <h2 className="text-xl font-bold">Room Details Verification</h2>
+              <h2 className="text-xl font-bold">Key Return Verification</h2>
             </CardHeader>
             <CardContent className="gap-6">
               <Step
@@ -44,8 +44,8 @@ const CheckoutStepTwo = () => {
                         alt="room icon"
                       />
                       <div>
-                        <p className="font-semibold">Form Submitted</p>
-                        <p className="text-gray-500">5 days ago</p>
+                        <p className="font-semibold">Room 5-12</p>
+                        <p className="text-gray-500">Room Key</p>
                       </div>
                     </div>
                     <Button

@@ -1,13 +1,12 @@
 "use client";
 
 import { Card, CardHeader, CardContent } from "@/components/card/Card";
-import { NavigationButtons } from "@/components/NavigationButtons";
+
 import { Step } from "@/components/Step";
 import { StepsLayout } from "@/components/StepsLayout";
-import { Button } from "@/components/ui/button";
-import { Navigation } from "lucide-react";
+
 import Image from "next/image";
-import Link from "next/link";
+
 import { useState, useRef } from "react";
 import React from "react";
 
