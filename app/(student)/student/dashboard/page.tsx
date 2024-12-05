@@ -35,12 +35,12 @@ const StudentDashboard: React.FC = () => {
             <h3 className="text-lg font-bold">Recent Activity</h3>
           </CardHeader>
           <CardContent className="p-4">
-            <div className="space-y-2 ">
-              <div className="bg-gray-50 rounded-xl px-4 py-2">
+            <div className="space-y-4">
+              <div className="bg-gray-50 rounded-xl p-4">
                 <p className="font-semibold">Room Registration</p>
                 <p className="text-gray-500">2 days ago</p>
               </div>
-              <div className="bg-gray-50 rounded-xl px-4 py-2">
+              <div className="bg-gray-50 rounded-xl p-4">
                 <p className="font-semibold">Form Submitted</p>
                 <p className="text-gray-500">5 days ago</p>
               </div>

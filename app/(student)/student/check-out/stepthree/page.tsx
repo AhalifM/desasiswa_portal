@@ -11,7 +11,7 @@ const CheckoutStepThree = () => {
         Check-out Complete!
       </h2>
       <p>Your room check-out has been successfully recorded</p>
-      <Button asChild>
+      <Button asChild className="bg-[#2563EB] hover:bg-[#1e53c4]">
         <Link href="/student/dashboard">Return to Dashboard</Link>
       </Button>
     </div>

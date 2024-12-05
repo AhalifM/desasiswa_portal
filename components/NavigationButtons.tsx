@@ -19,7 +19,7 @@ export const NavigationButtons = ({
           <p>Back</p>
         </Link>
       </Button>
-      <Button asChild variant="default" className="w-full">
+      <Button asChild className="w-full bg-[#2563EB] hover:bg-[#1e53c4]">
         <Link href={next}>
           <p>{home ? "Home" : "Next"}</p>
         </Link>

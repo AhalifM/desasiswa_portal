@@ -18,8 +18,8 @@ type StepsLayoutProps = {
 export const StepTitle = ({ active, title }: StepTitleProps) => {
   return (
     <h2
-      className={`text-xl ${
-        active ? "text-black font-medium" : "text-zinc-100"
+      className={`text-xl font-semibold ${
+        active ? "text-[#2563EB]" : "text-zinc-100"
       }`}
     >
       {title}

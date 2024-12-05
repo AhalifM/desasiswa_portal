@@ -8,6 +8,7 @@ import {
 } from "@/components/card/Card";
 import Image from "next/image";
 import { Button } from "../ui/button";
+import Link from "next/link";
 
 interface RoomData {
   block: string;
@@ -147,7 +148,11 @@ const RoomDetailsCard = ({ roomData }: { roomData: RoomData }) => {
                   </div>
                 </div>
                 <div>
-                  <Button>Transfer Room</Button>
+                  <Button asChild className="bg-[#2563EB] hover:bg-[#1e53c4]">
+                    <Link href="/admin/student-management/transfer-room">
+                      Transfer Room
+                    </Link>
+                  </Button>
                 </div>
               </div>
             ))}

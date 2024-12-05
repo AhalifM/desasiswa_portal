@@ -17,27 +17,27 @@ const StepOne = () => {
             </CardHeader>
             <CardContent>
               <div className="grid grid-cols-2 gap-4">
-                <div>
-                  <p className="font-medium">Room Number</p>
+                <div className="bg-gray-50 rounded-xl p-4">
+                  <p className="font-semibold text-lg">Room Number</p>
                   <p>5-12</p>
                 </div>
-                <div>
-                  <p className="font-medium">Block</p>
+                <div className="bg-gray-50 rounded-xl p-4">
+                  <p className="font-semibold text-lg">Block</p>
                   <p>Block A</p>
                 </div>
-                <div>
-                  <p className="font-medium">Room Type</p>
+                <div className="bg-gray-50 rounded-xl p-4">
+                  <p className="font-semibold text-lg">Room Type</p>
                   <p>Double Occupancy</p>
                 </div>
-                <div>
-                  <p className="font-medium">Floor</p>
+                <div className="bg-gray-50 rounded-xl p-4">
+                  <p className="font-semibold text-lg">Floor</p>
                   <p>5th Floor</p>
                 </div>
               </div>
-              <div className="mt-4">
+              <div className="mt-6">
                 <Button
                   asChild
-                  className="bg-black text-white px-4 py-2 rounded w-full text-center"
+                  className="bg-[#2563EB] hover:bg-[#1e53c4] text-white px-4 py-2 rounded w-full text-center"
                 >
                   <Link href="/student/check-in/steptwo">Confirm Details</Link>
                 </Button>
