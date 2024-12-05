@@ -5,6 +5,8 @@ import {
   CardTitle,
   CardContent,
 } from "@/components/card/Card";
+import { Button } from "./ui/button";
+import Link from "next/link";
 
 const RoomAssignments = () => {
   const data = [
@@ -78,7 +80,13 @@ const RoomAssignments = () => {
                     {row.lastUpdated}
                   </td>
                   <td className="p-4 border-y text-center">
-                    <button className="text-[#2563EB]">{row.actions}</button>
+                    <Button
+                      asChild
+                      className="text-[#2563EB]"
+                      variant="outline"
+                    >
+                      <Link href="/admin/room-details">{row.actions}</Link>
+                    </Button>
                   </td>
                 </tr>
               ))}
