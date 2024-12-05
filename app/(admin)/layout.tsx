@@ -19,7 +19,7 @@ export default function AdminLayout({
         <AdminSideMenu />
         <div className="flex flex-col w-full">
           <AdminTopMenu />
-          <div className="bg-slate-100 p-6 h-full justify-center w-full inline-flex items-center">
+          <div className="bg-slate-100 p-6 h-full justify-center w-full inline-flex items-start">
             {children}
           </div>
         </div>

@@ -6,6 +6,8 @@ import {
   CardTitle,
   CardContent,
 } from "@/components/card/Card";
+import { Button } from "../ui/button";
+import Link from "next/link";
 
 const SelectStudentToTransfer = () => {
   const students = [
@@ -40,9 +42,14 @@ const SelectStudentToTransfer = () => {
                 </div>
               </div>
               <div>
-                <button className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">
-                  Transfer
-                </button>
+                <Button
+                  asChild
+                  className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded"
+                >
+                  <Link href="/admin/student-management/transfer-room">
+                    Transfer
+                  </Link>
+                </Button>
               </div>
             </div>
           ))}
