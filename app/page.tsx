@@ -9,7 +9,7 @@ export default function Home() {
       <div className="flex flex-col gap-6">
         <h1 className="text-5xl">Desasiswa Portal</h1>
         <p className="text-gray-500">
-          Your one-stop solution for seamless student housing management.
+          Your one-stop solution for seamless student hostel management.
           <br /> Stay connected, stay organized!
         </p>
         <div className="flex w-full justify-between space-x-6">
